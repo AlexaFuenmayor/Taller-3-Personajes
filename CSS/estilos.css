@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../imagenes/marmol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  position: fixed; /*hace que los elementos se queden estaticos*/
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.img-logo {
+  height: 70px;
+  margin-left: 5%;
+}
+.menu {
+  /*width:auto*/
+}
+.menu ul {
+  /*altera el ancho y alto de sus elementos para ajustarse lo mejor porsible al
+    espacio disponible*/
+  display: flex;
+  list-style: none;
+  margin-top: 4mm;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.menu ul li a:hover {
+  color: rgb(117, 20, 117);
+}
+
+main {
+  /*position: especifica el tipo de método de posicionamiento utilizado para un elemento:top:
+    -estatic
+    -relative
+    -absolute
+    -fixed */
+  position: relative;
+  top: 60px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*unidad VH: unidad relativa de acuerdo al viewport,(depende de la pagina, 
+    mas flexibles a la pantalla)*/
+  height: 65vh;
+}
+
+div.gallery-container div.gallery-item {
+  /*abreviatura para el flex-grow, flex shrink, flex-basis
+    -flex-grow:1;
+    -flex-shrink:0;
+    -flex-basis:auto;
+    
+    hace que el elemento flexible sea flexible y estable, la base flexible en 0*/
+
+  flex: 1;
+  height: 100%;
+  /*hace que el cursor cuando este dentro del item cmabie de forma(manito)*/
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: flex 0.5s ease-in-out;
+}
+.gallery-item span {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 8px 20px 8px;
+  background-color: rgb(117, 20, 117);
+  opacity: 0.8;
+  transition: opasity 0.8s ease;
+  border-radius: 5px;
+  font-family: "Dancing Script", cursive;
+}
+div.gallery-container div.gallery-item:hover span {
+  opacity: 0;
+}
+
+.gallery-container .gallery-item:hover {
+  /*flex-grow indicando el factor de crecimiento del item respecto al resto
+    flex-shrink indica el factor de crecimiento respecto al resto
+    flex-basis: indica el tamaño base de los items(define el tamaño por defecto de base
+
+    flex: 6 50px 4px;
+
+    propiedad flex: sirve como atajo para indicar estas tres propiedades de los items hijos*/
+  flex: 5;
+}
+.gallery-container .gallery-item.g-item-1 {
+  background-image: url(../imagenes/simon.jpg);
+}
+
+.gallery-container .gallery-item.g-item-2 {
+  background-image: url(../imagenes/marie.png);
+}
+
+.gallery-container .gallery-item.g-item-3 {
+  background-image: url(../imagenes/calvino\ juan.jpg);
+}
+
+.gallery-container .gallery-item.g-item-4 {
+  background-image: url(../imagenes/Albert-Einstein.jpg);
+}
+
+.gallery-container .gallery-item.g-item-5 {
+  background-image: url(../imagenes/20160404182401-mlkjr.jpeg);
+}
+
+h1 {
+  font-size: 50px;
+  padding-top: 6cm;
+  color: rgb(117, 20, 117);
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.bios {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 1cm;
+  padding-bottom: 3cm;
+}
+.bio {
+  width: 400px;
+  height: 350px;
+  margin: 0 10px;
+  text-align: center;
+  padding-top: 2cm;
+}
+
+.bio img {
+  width: 300px;
+  height: 300px;
+  padding-top: 5mm;
+}
+.bio img:hover {
+  transform: scale(0.9);
+  box-shadow: 0 16px 20px blueviolet;
+}
+
+.bios .bio p {
+  padding: 9mm;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: initial;
+}
+
+.bios .bio a {
+  text-decoration: none;
+}
+
+h3 {
+  padding-top: 8cm;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(117, 20, 117);
+  font-family: "Dancing Script", cursive;
+}
+
+.hechos-historicos1 {
+  display: flex;
+  width: 99%;
+  height: auto;
+  padding: 5mm 0 5mm 0;
+  justify-content: space-between;
+}
+
+.hechos-historicos-galeria {
+  width: 300px;
+  height: 350px;
+  padding-left: 11mm;
+}
+
+.hechos-historicos-galeria img {
+  width: 250px;
+  height: 200px;
+  border-radius: 15%;
+}
+
+.hechos-historicos-galeria img:hover {
+  transform: scaleZ(0.3);
+  box-shadow: 2px 17px 30px rgb(117, 20, 117);
+}
+
+h2 {
+  text-align: center;
+  height: auto;
+  padding: 2cm 0 5mm 0;
+  font-size: 30px;
+}
+
+.hechos-historicos2 {
+  display: flex;
+  align-items: center;
+  margin-left: 2cm;
+  justify-content: center;
+}
+.hechos-historicos2 .content {
+  flex: 1;
+  padding: 10px;
+  color: rgb(117, 20, 117);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  margin-right: 2cm;
+
+  text-align: justify;
+}
+
+.hechos-historicos2 img {
+  width: 250px;
+  height: 200px;
+  border-radius: 20%;
+  margin: 8mm;
+  box-shadow: 2px 17px 30px rgb(117, 20, 117);
+}
+
+.hechos-historicos3 {
+  display: flex;
+  align-items: center;
+  margin-left: 2cm;
+  justify-content: ;
+  flex-direction: row-reverse;
+}
+
+.hechos-historicos3 img {
+  width: 250px;
+  height: 200px;
+  border-radius: 20%;
+  margin: 8mm;
+  box-shadow: 2px 17px 30px rgb(117, 20, 117);
+}
+
+.hechos-historicos3 .content {
+  flex: 1;
+  padding: 10px;
+  color: rgb(117, 20, 117);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+h4 {
+  padding-top: 1cm;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(117, 20, 117);
+  font-family: "Dancing Script", cursive;
+}
+
+.videos {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 1cm;
+  align-items: center;
+}
+
+.videos-1 {
+  border-width: 2mm;
+  border-color: rgb(117, 20, 117);
+  border-style: dotted;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: rgb(117, 20, 117);
+  background-size: 90%;
+  background-size: 700px 100%;
+  margin-top: 2cm;
+}
+
+.logof img {
+  display: inline-flex;
+  padding-top: 3cm;
+  padding-left: 560px;
+}
+
+.contactos {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding-top: 3cm;
+  align-content: center;
+}
+
+.contacto-icono img {
+  width: 50px;
+  height: auto;
+  display: flex;
+  padding-bottom: 5mm;
+  justify-content: space-between;
+  padding-top: 2mm;
+}
+.mapa {
+  width: 300px;
+  height: 400px;
+  display: inline-flex;
+  margin-left: 5cm;
+  padding-bottom: 2cm;
+}
+.contactos .content p {
+  flex: 1;
+  padding: 10px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.pie {
+  margin-top: 100px;
+  background-color: white;
+  min-height: 50px;
+  padding-top: 10px;
+  border-radius: auto;
+}
+
+.pie p {
+  text-align: center;
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  font-size: 5mm;
+}

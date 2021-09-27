@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+
+    <title>Personajes Históricos</title>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+</head>
+
+<body>
+    <header>
+        <img class="img-logo" src="imagenes/logo.png" alt="" />
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Obras</a></li>
+                <li><a href="#">Personajes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--main es una ETIQUETA SEMANTIC Representa el contenido principal de un documento,
+    No debe haber mas de 1 elemento main en un documento y tampoco debe ser desdendiente
+     de un elemento article y demás etiquetas semanticas-->
+    <main>
+        <section>
+            <div class="gallery-container">
+                <div class="gallery-item g-item-1">
+                    <span>Simón Bolivar</span>
+                </div>
+                <div class="gallery-item g-item-2">
+                    <span>Marie Curie</span>
+                </div>
+                <div class="gallery-item g-item-3">
+                    <span>Juan Calvino</span>
+                </div>
+
+                <div class="gallery-item g-item-4">
+                    <span>Albert Eistein</span>
+                </div>
+
+                <div class="gallery-item g-item-5">
+                    <span>Martin Luther King</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <article>
+            <h1>Biografías</h1>
+
+            <div class="bios">
+                <div class="bio">
+                    <h2>Simón Bolivar</h2>
+                    <img src="imagenes/simonbb.jfif" alt="Simon Bolivar" />
+                    <p>
+                        <b>
+                            Simón José Antonio de la Santísima Trinidad Bolívar Palacios
+                            Ponte y Blanco.</b>
+                        Fue un militar y político venezolano, fundador de las repúblicas
+                        de la Gran Colombia y Bolivia. Fue una de las figuras más
+                        destacada de la emancipación hispanoamericana frente al Imperio
+                        español. <br />
+                        Para más Info <a target="_blank" href="">Click Aquí</a>
+                    </p>
+                </div>
+
+                <div class="bio">
+                    <h2>Marie Curie</h2>
+                    <img src="imagenes/mariaa.jpeg" alt="Marie Curie" />
+                    <p>
+                        <b> Marya Salomea Skłodowska-Curie.</b> (Varsovia, 7 de noviembre
+                        de 1867-Passy, 4 de julio de 1934), fue una científica polaca
+                        nacionalizada francesa. Pionera en el campo de la radiactividad,
+                        fue la primera persona en recibir dos premios Nobel en distintas
+                        especialidades <br />
+                        Para más Info
+                        <a target="_blank" href="https://canalhistoria.es/perfiles/marie-curie/">
+                            Click Aquí</a>
+                    </p>
+                </div>
+
+                <div class="bio">
+                    <h2>Juan Calvino</h2>
+                    <img src="imagenes/calv j.jpg" alt="Juan Calvino" />
+                    <p>
+                        <b> Juan Calvino </b> (Noyon, 10 de julio de 1509-Cantón de
+                        Ginebra, 27 de mayo de 1564), bautizado con el nombre de Jehan
+                        Cauvin, latinizado como Calvinus, fue un teólogo francés,
+                        considerado como uno de los autores y gestores de la Reforma
+                        Protestante. <br />
+                        Info
+                        <a target="_blank" href="https://www.biografiasyvidas.com/biografia/c/calvino_juan.htm">
+                            Click Aquí</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bios">
+                <div class="bio">
+                    <h2>Albert Eistein</h2>
+                    <img src="imagenes/einstein__768x432.jpg" alt="Eistein" />
+                    <p>
+                        <b> Albert Einstein</b> (1879-1955) Nació el 14 de marzo de 1879,
+                        en Ulm (Alemania). Murió el 18 de abril de 1955, en Princeton
+                        (Estados Unidos de América). Es el científico mundialmente más
+                        conocido por el desarrollo de la Teoría de la Relatividad que
+                        revolucionó la ciencia conocida hasta el siglo XX. <br />
+                        Para más Info
+                        <a target="_blank" href="http://www.kids.csic.es/cientificos/einstein.html">Click Aquí</a>
+                    </p>
+                </div>
+
+                <div class="bio">
+                    <h2>Martin Luther King</h2>
+                    <img src="imagenes/martin-luther-king.jpg" alt="" />
+                    <p>
+                        <b>Martin Luther King Jr.</b> Fue un activista y pastor baptista
+                        estadounidense del siglo XX (nació el 15 de enero de 1929 en
+                        Atlanta y falleció el 4 de abril de 1968 en Memphis a los 39 años
+                        de edad) conocido principalmente por: – Luchar pacíficamente
+                        contra la segregación y discriminación racial en Estados Unidos.
+                        <br />
+                        Para más Info
+                        <a target="_blank"
+                            href="https://www.buscabiografias.com/biografia/verDetalle/279/Martin%20Luther%20King">
+                            Click
+                            Aquí</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <h3>Hechos Relevantes</h3>
+    <section>
+        <article>
+            <h2>Bolivar <br />Click en la Imagén</h2>
+            <div class="hechos-historicos1">
+
+                <div class="hechos-historicos-galeria">
+
+                    <img onclick="hechosHistoricos()" src="imagenes/simon-1.jfif" alt="" />
+                </div>
+
+                <div class="hechos-historicos-galeria">
+                    <img onclick="hechosHistoricos1()" src="imagenes/simon b.jpg" alt="" />
+                </div>
+
+                <div class="hechos-historicos-galeria">
+                    <img onclick="hechosHistoricos2()" src="imagenes/1c76061790af92dbdeb5708156555b47.jfif" alt="" />
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+
+            <h2>Curie</h2>
+
+            <div class="hechos-historicos2">
+                <div class="image"><img src="imagenes/marie joven.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p> Primera mujer en hacer clases en la Universidad de París. en noviembre de
+                        1891, a los 24 años de edad, abandona Polonia para dirigirse a París, a inscribirse en la
+                        Universidad de la Sorbonne como "Marie"; la versión francesa de su nombre </p>
+                </div>
+            </div>
+
+            <div class="hechos-historicos2">
+                <div class="image"><img src="imagenes/marie11.jpg" alt=""></div>
+                <div class="content">
+                    <p> Marie Curie y su esposo Pierre, fueron los <b> descubridores de la
+                            radioactividad, junto a los elementos polonio y radio.</b> Marie dedicó más de treinta y
+                        cinco años de su carrera científica al estudio de esta entidad. Con tenacidad y esfuerzo
+                        logró destacarse en una época donde el machismo y la
+                        xenofobia estaban presentes en todas partes.</p>
+                </div>
+            </div>
+            <div class="hechos-historicos2">
+                <div class="image"><img src="imagenes/marie1.jpg" alt=""></div>
+                <div class="content">
+                    <p>Los esposos Curie, junto a Becquerel, <b>recibieron el Premio Nobel de
+                            Física en 1903 </b> «en reconocimiento de de los extraordinarios servicios que han prestado
+                        con sus
+                        investigaciones de la radioactividad, descubierta por el profesor Henri Becquerel».
+                        Marie <b> fue la primera mujer en recibir un Premio Nobel.</b> </p>
+                </div>
+            </div>
+
+            <div class="hechos-historicos2">
+                <div class="image"><img src="imagenes/fig08-06.jpg" alt=""></div>
+                <div class="content">
+                    <p> En 1911 recibió, por primera vez en la historia, un <b> segundo Premio Nobel.
+                            Esta vez fue el de Química, por el descubrimiento del peso atómico del radio.</b> Durante
+                        la Primera Guerra Mundial, junto a su hija Irene, organizaron equipos de rayos X portátiles
+                        para que los médicos pudieran atender con más
+                        precisión a los soldados heridos </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2>Calvino</h2>
+
+            <div>
+                <div class="hechos-historicos3">
+
+                    <div class="image"><img src="imagenes/calvino1.jpg" alt=""></div>
+                    <div class="content">
+                        <p> Los escritos de Calvino fueron los <b>textos
+                                teológicos más importantes impresos en Inglaterra </b> para el fin del
+                            reinado de Isabel I.</p>
+                    </div>
+                </div>
+
+                <div class="hechos-historicos3">
+
+                    <div class="image"><img src="imagenes/calvino2.jpg" alt=""></div>
+                    <div class="content">
+                        <p> El sistema de protestantismo fundado por Calvino <b> calvinismo </b>
+                            era expresión de las reivindicaciones de la parte más audaz de la burguesía de entonces.
+                            El fundamento del calvinismo radica en la doctrina según la cual ciertas personas están
+                            predestinadas por Dios a la «salvación», y otras, a la «condenación».</p>
+                    </div>
+                </div>
+
+                <div class="hechos-historicos3">
+
+                    <div class="image"><img src="imagenes/juan c.jpg" alt=""></div>
+                    <div class="content">
+                        <p> Fue compositor de himnos y compuso un influyente catecismo,
+                            cientos de cartas a <b> compañeros reformistas, y comentarios sobre casi todos los
+                                libros de la Biblia.</b></p>
+                    </div>
+                </div>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h2>Eistein</h2>
+            </div>
+            <div class="hechos-historicos2">
+                <div class="image"><img src="imagenes/eistein1.jpg" alt=""></div>
+                <div class="content">
+                    <p> 1912-14
+                        <b> Profesor de física teórica </b> en el Instituto Tecnológico Federal de Zurich
+                        (anterior Escuela Politécnica)
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="hechos-historicos2">
+                <div class="image"><img src="imagenes/aistein2.jpg" alt=""></div>
+                <div class="content">
+                    <p> En 1905, publicó unos artículos de suma relevancia
+                        para la ciencia: <b> sobre el efecto fotoeléctrico, sobre el movimiento browniano
+                            y la teoría de la relatividad especial.</b> Estos artículos le valieron la
+                        obtención de su doctorado, una plaza de profesor en 1909 en la Universidad
+                        de Berna, en 1914 una plaza en la Academia de ciencias prusiana, en Berlín.
+                        <b></b>En 1919 ocurre un eclipse solar que confirma las predicciones de Einstein
+                        sobre la desviación de los rayos de luz.</b> Insólito salto a la fama mundial
+                        y en 1921 el Premio Nobel de Física.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hechos-historicos2">
+                <div class="image"><img src="imagenes/eistein3.jpg" alt=""></div>
+                <div class="content">
+                    <p> Por toda su trayectoria, obtuvo fama y
+                        prestigio mundiales como científico y la <b> ecuación E=m·c 2 quizá sea
+                            de las más conocidas de la Física.</b> </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h2>Martin Luther King Jr <br />Click en la Imagén</h2>
+            <div class="hechos-historicos1">
+
+                <div class="hechos-historicos-galeria">
+
+                    <img onclick="hechosHistoricos3()" src="imagenes/martin1.jpg" alt="" />
+                </div>
+
+                <div class="hechos-historicos-galeria">
+                    <img onclick="hechosHistoricos4()" src="imagenes/martin2.jpg" alt="" />
+                </div>
+
+                <div class="hechos-historicos-galeria">
+                    <img onclick="hechosHistoricos5()" src="imagenes/martin3.jpg" alt="" />
+                </div>
+            </div>
+        </article>
+    </section>
+    <h4>Multimedia</h4>
+
+    <section>
+        <div class="videos">
+
+            <div class="videos-1">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/VWH6SZlnJcc"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="videos-1">
+
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/Okgclx1vY8Q"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>
+        <div class="videos">
+            <div class="videos-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KPNu15PA-I0"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <div class="videos">
+            <div class="videos-1">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/k4wK7INYw_s"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="videos-1">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/-cJmOhtvB_E"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logof"><img src="imagenes/Instituto-Cursos-Programacion-50lg.png" alt=""></div>
+        <div class="contactos">
+            <div>
+                <div class="contacto-icono"><img src="imagenes/Iconos para las aplicaciones de celular Facebook.jfif"
+                        alt=""></div>
+                <div class="contacto-icono"><img src="imagenes/Iconos para las aplicaciones de celular Instagram.jfif"
+                        alt=""></div>
+            </div>
+            <div class="content">
+                <p>Contactanos <br> En nuestras redes <br> y número de <br> telefono: <br> 31354321</p>
+            </div>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8122569.871493506!2d-78.96275932537893!3d6.
+                    250741234510351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9abf01007c8b%3A0xf34837fe0c5507db!2sBIT%
+                    20-%20Cursos%20de%20Programaci%C3%B3n%20en%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1632780258796!5m2!1ses!2sco"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+        <div class="pie">
+            <p>© BIT INSTITUTE. TODOS LOS DERECHOS RESERVADOS</p>
+
+        </div>
+    </footer>
+    <script src="../Personajes hitóricos/animaciones.js"></script>
+</body>
+
+</html>
